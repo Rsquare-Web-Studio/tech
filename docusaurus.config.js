@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'RWS Tech',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -38,19 +38,24 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/', // Serve the docs at the site's root
+          /* other docs plugin options */
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
+        // docs: {
+        //   sidebarPath: require.resolve('./sidebars.js'),
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -67,61 +72,55 @@ const config = {
         title: 'Rsquare Web Studio',
         logo: {
           alt: 'Main Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
           type: 'html',
           position: 'right',
-          value: '<a href="" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'img/behance.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">'
+          value: '<a href="https://www.behance.com/rsquarewebstudio/" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'img/behance.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">'
           },
           {
             type: 'html',
             position: 'right',
-            value: '<a href="" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'img/githubd.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">'
+            value: '<a href="https://www.instagram.com/rsquarewebstudio/" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'img/instagram.png\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">'
           },
           {to: 'https://rsquarewebstudio.com', label: 'Home', position: 'left'},
           {to: 'https://blog.rsquarewebstudio.com', label: 'Blog', position: 'left'},
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
         ],
       },
       footer: {
         style: 'light',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
             title: 'Gallery',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Tech Headhunters',
+                href: 'https://rsquarewebstudio.com/gallery/tech-headhunters',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Tavi Grill',
+                href: 'https://rsquarewebstudio.com/gallery/tavi-grill',
               },
+              {
+                label: 'The Villa',
+                href: 'https://rsquarewebstudio.com/gallery/the-villa'
+              }
             ],
           },
           {
             title: 'Projects',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',

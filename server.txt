@@ -1,0 +1,14 @@
+server {  
+    listen 80;
+    server_name rwsde.com;
+
+    access_log /var/log/nginx/rwsde.com.access.log;
+    error_log  /var/log/nginx/rwsde.com.error.log;
+
+    root /home/rwsdevuser/public;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
