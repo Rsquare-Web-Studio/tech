@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktech_blog=self.webpackChunktech_blog||[]).push([[7908],{9638:e=>{e.exports=JSON.parse('{"permalink":"/tech/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
